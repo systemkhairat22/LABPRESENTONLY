@@ -10,7 +10,7 @@
 <body>
 
 <a href="createmember.jsp">Create Member</a><br><br>
-<a href="home.html">Home</a><br><br>
+<a href="index.html">Home</a><br><br>
 		<table border="1">
 			<tr>
 				<th>Member ID</th>
@@ -31,13 +31,13 @@
 				<td><c:out value="${m.mem_name}" /></td>
 				<td><c:out value="${m.mem_icnum}" /></td>
 				
+				<td><c:out value="${m.mem_email}" /></td>
 				<td><c:out value="${m.mem_age}" /></td>
 				<td><c:out value="${m.mem_address}" /></td>
-				<td><c:out value="${m.mem_email}" /></td>
 				<td><c:out value="${m.mem_phonenum}" /></td>
-				<td><c:out value="${m.mem_password}" /></td>
-			    <td><c:out value="${m.repname}" /></td>
+				<td><c:out value="${m.mem_repname}" /></td>
 			    <td><c:out value="${m.repnum}" /></td>
+			    <td><c:out value="${m.password}" /></td>
 							
 				<td><a class="btn btn-primary" href="viewmembercontroller?memberid=<c:out value="${m.memberid}"/>">View</a></td>
 				<td><a class="btn btn-primary" href="updatemembercontroller?memberid=<c:out value="${m.memberid}"/>">Update</a></td>

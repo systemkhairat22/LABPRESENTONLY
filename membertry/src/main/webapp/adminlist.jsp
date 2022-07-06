@@ -10,7 +10,7 @@
 <body>
 
 <a href="createadmin.jsp">Create Admin</a><br><br>
-<a href="home.html">Home</a><br><br>
+<a href="index.html">Home</a><br><br>
 		<table border="1">
 			<tr>
 				<th>Admin ID</th>
@@ -29,11 +29,12 @@
 				<td><c:out value="${a.add_name}" /></td>
 				<td><c:out value="${a.admin_icnum}" /></td>
 				
-				<td><c:out value="${a.add_age}" /></td>
 				<td><c:out value="${a.add_email}" /></td>
+				<td><c:out value="${a.add_age}" /></td>
 				<td><c:out value="${a.add_phonenum}" /></td>
-				<td><c:out value="${a.add_password}" /></td>
+				
 			    <td><c:out value="${a.supervisorid}" /></td>
+			    <td><c:out value="${a.add_password}" /></td>
 			   
 				<td><a class="btn btn-primary" href="viewadmincontroller?adminid=<c:out value="${a.adminid}"/>">View</a></td>
 				<td><a class="btn btn-primary" href="updateadmincontroller?adminid=<c:out value="${a.adminid}"/>">Update</a></td>

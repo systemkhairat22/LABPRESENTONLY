@@ -59,7 +59,39 @@ public class DaoAdmin {
     	add_password = admin.getAdd_password();
     	supervisorid = admin.getSupervisorid();
         
+    	if (supervisorid == 0) {  // 0 bermaksud tiada supervisor, auto assign 0 if no supervisor id in create admin JSP
+    		try
+        	{
+        	//call getConnection() method
+        		con = connectionmanager.getConnection();
+        		
+        	//create statement
+        		ps = con.prepareStatement("INSERT INTO admin(add_name,admin_icnum,add_age,add_email,add_phonenum,add_password) values(?,?,?,?,?,?)");
+        		ps.setString(1, add_name);
+        		ps.setString(2,admin_icnum);
+        		ps.setInt(3, add_age);
+        		ps.setString(4, add_email);
+        		ps.setString(5, add_phonenum);
+        		ps.setString(6, add_password);
+        		
+        		
+        		
+        		//execute query
+        		ps.executeUpdate();
+    			System.out.println("Successfully inserted without supervisor");
+                
+    			//close connection
+                con.close();
+        	}
+        	catch (Exception e) {
+                e.printStackTrace();
+            }
+        	
+    		
+    	} // end of if
     	
+    	else {
+    		
     	try
     	{
     	//call getConnection() method
@@ -86,6 +118,8 @@ public class DaoAdmin {
     	catch (Exception e) {
             e.printStackTrace();
         }
+    	
+    	} // end of else
     }
 
     //get all admin

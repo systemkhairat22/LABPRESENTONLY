@@ -9,7 +9,7 @@ public class admin {
 	private String add_email;
 	private String add_password;
 	private String add_phonenum;
-	private int supervisorid;
+	private int supervisorid ;
 	
 	public admin(int adminid, String admin_icnum, String add_name, int add_age, String add_email, String add_password,
 			String add_phonenum, int supervisorid) {

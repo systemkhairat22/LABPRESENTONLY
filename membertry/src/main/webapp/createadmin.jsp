@@ -43,8 +43,19 @@
                        <th><input type="password"name="add_password"></th>
                    </tr>
                    <tr>
-                       <th><label for="supervisorid">Supervisor ID</label></th>
-                       <th><input type="number" name="supervisorid"></th>
+                       <th><label for="supervisorid">Supervisor ID</label>
+                       <th><input type="number"name="supervisorid"></th>
+                       
+                       
+                       
+                       
+                      <!--  <th> <input type= "radio" name= "supervisorid" value ="yes">YES</th>
+                             
+                          <th>  <input type= "radio" name= "supervisorid" value ="no">NO</th>--->
+                       
+                  
+                    
+               
                    </tr>
                    
 			</tbody>
@@ -53,7 +64,14 @@
 		<input  type="submit" value= "submit" class="btn btn-outline-primary">
         <input type="reset"  value = "reset" class="btn btn-outline-primary">
 	</form>
+<script>   		
 
+if(supervisorid == 0)
+	{
+		<% %>
+	}
+
+  </script>
 
 </body>
 </html>
