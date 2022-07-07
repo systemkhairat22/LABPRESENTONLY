@@ -7,6 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>member list</title>
 </head>
+
 <body>
 
 <a href="createmember.jsp">Create Member</a><br><br>
@@ -35,9 +36,9 @@
 				<td><c:out value="${m.mem_age}" /></td>
 				<td><c:out value="${m.mem_address}" /></td>
 				<td><c:out value="${m.mem_phonenum}" /></td>
-				<td><c:out value="${m.mem_repname}" /></td>
+				<td><c:out value="${m.repname}" /></td>
 			    <td><c:out value="${m.repnum}" /></td>
-			    <td><c:out value="${m.password}" /></td>
+			    <td><c:out value="${m.mem_password}" /></td>
 							
 				<td><a class="btn btn-primary" href="viewmembercontroller?memberid=<c:out value="${m.memberid}"/>">View</a></td>
 				<td><a class="btn btn-primary" href="updatemembercontroller?memberid=<c:out value="${m.memberid}"/>">Update</a></td>

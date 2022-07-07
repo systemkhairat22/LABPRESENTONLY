@@ -7,9 +7,32 @@
 <meta charset="ISO-8859-1">
 <title>Update Admin</title>
 </head>
+<style>
+
+#login-box{
+position: relative;
+	margin: 5% auto;
+	width: 600px;
+	height: 650px;
+	background: #FFF;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+}
+</style>
 <body>
 <a href="listadmincontroller">List Of Member</a><br><br>
-	
+	<div id= "login-box">
 	<form action="updateadmincontroller" method="post">
 		Admin IC Number: <br>
 		<input type="text" name="admin_icnum" value="<c:out value="${a.admin_icnum}"/>"/><br>
@@ -30,6 +53,7 @@
 		<input type="submit" value="Submit"/>
 		<input type="reset" value="Reset"/>
 	</form>
+	</div>
 
 </body>
 </html>

@@ -6,7 +6,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Admin list</title>
+
 </head>
+
 <body>
 
 <a href="createadmin.jsp">Create Admin</a><br><br>
